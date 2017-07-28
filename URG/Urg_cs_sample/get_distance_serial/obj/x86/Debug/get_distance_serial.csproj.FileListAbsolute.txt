@@ -1,0 +1,8 @@
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\bin\Debug\get_distance.exe.config
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\bin\Debug\get_distance.exe
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\bin\Debug\get_distance.pdb
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\bin\Debug\SCIP_library.dll
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\bin\Debug\SCIP_library.pdb
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\obj\x86\Debug\get_distance_serial.csprojResolveAssemblyReference.cache
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\obj\x86\Debug\get_distance.exe
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_serial\obj\x86\Debug\get_distance.pdb

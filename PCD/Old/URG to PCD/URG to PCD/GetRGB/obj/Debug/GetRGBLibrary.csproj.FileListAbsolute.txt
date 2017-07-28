@@ -1,0 +1,6 @@
+C:\Users\483446\Documents\PCD\URG to PCD\URG to PCD\GetRGB\bin\Debug\GetRGB.dll.config
+C:\Users\483446\Documents\PCD\URG to PCD\URG to PCD\GetRGB\bin\Debug\GetRGB.dll
+C:\Users\483446\Documents\PCD\URG to PCD\URG to PCD\GetRGB\bin\Debug\GetRGB.pdb
+C:\Users\483446\Documents\PCD\URG to PCD\URG to PCD\GetRGB\obj\Debug\GetRGBLibrary.csprojResolveAssemblyReference.cache
+C:\Users\483446\Documents\PCD\URG to PCD\URG to PCD\GetRGB\obj\Debug\GetRGB.dll
+C:\Users\483446\Documents\PCD\URG to PCD\URG to PCD\GetRGB\obj\Debug\GetRGB.pdb

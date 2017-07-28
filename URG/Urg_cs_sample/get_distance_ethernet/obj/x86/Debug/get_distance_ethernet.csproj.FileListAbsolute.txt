@@ -1,0 +1,8 @@
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\bin\Debug\get_distance_ethernet.exe.config
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\bin\Debug\get_distance_ethernet.exe
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\bin\Debug\get_distance_ethernet.pdb
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\bin\Debug\SCIP_library.dll
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\bin\Debug\SCIP_library.pdb
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\obj\x86\Debug\get_distance_ethernet.exe
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\obj\x86\Debug\get_distance_ethernet.pdb
+C:\Users\483446\Documents\URG\Urg_cs_sample\get_distance_ethernet\obj\x86\Debug\get_distance_ethernet.csprojResolveAssemblyReference.cache

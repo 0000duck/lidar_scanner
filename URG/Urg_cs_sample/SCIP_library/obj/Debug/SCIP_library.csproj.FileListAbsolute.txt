@@ -1,0 +1,5 @@
+C:\Users\483446\Documents\URG\Urg_cs_sample\SCIP_library\bin\Debug\SCIP_library.dll
+C:\Users\483446\Documents\URG\Urg_cs_sample\SCIP_library\bin\Debug\SCIP_library.pdb
+C:\Users\483446\Documents\URG\Urg_cs_sample\SCIP_library\obj\Debug\SCIP_library.csprojResolveAssemblyReference.cache
+C:\Users\483446\Documents\URG\Urg_cs_sample\SCIP_library\obj\Debug\SCIP_library.dll
+C:\Users\483446\Documents\URG\Urg_cs_sample\SCIP_library\obj\Debug\SCIP_library.pdb
