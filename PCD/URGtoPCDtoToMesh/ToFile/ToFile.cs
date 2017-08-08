@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Ports;
 using System.Net.Sockets;
@@ -258,10 +259,11 @@ namespace ToFile
             Console.WriteLine();
             Console.Write("Writing data to file... ");
 
-            DirectoryInfo directoryInfo = Directory.CreateDirectory(Directory.GetCurrentDirectory().ToString() + Path.DirectorySeparatorChar + "Scan_" + DateTime.Now.Ticks.ToString());
+            DirectoryInfo directoryInfo = Directory.CreateDirectory(Directory.GetCurrentDirectory().ToString() + Path.DirectorySeparatorChar + "Scans" +  Path.DirectorySeparatorChar + "Scan_" + DateTime.Now.Ticks.ToString());
 
             WriteToPCDFile(vectorsRGB, directoryInfo);
             WriteToToMeshFile(vectorsRGB, directoryInfo);
+            ToMesh(directoryInfo);
 
             Console.WriteLine("Done!");
         }
@@ -306,17 +308,17 @@ namespace ToFile
                     }
                 }
 
-                FixMesh(streamWriter, vectors);
+                FixPoints(streamWriter, vectors);
             }
         }
 
-        private static void FixMesh(StreamWriter streamWriter, double[,,] vectors)
+        private static void FixPoints(StreamWriter streamWriter, double[,,] vectors)
         {
-            AddBaseMash(streamWriter, vectors);
-            InterpolateMesh(streamWriter, vectors);
+            AddBasePoints(streamWriter, vectors);
+            InterpolatePoints(streamWriter, vectors);
         }
 
-        private static void AddBaseMash(StreamWriter streamWriter, double[,,] vectors)
+        private static void AddBasePoints(StreamWriter streamWriter, double[,,] vectors)
         {
             double interpolationFactor = (vectors.GetLength(vectors.Rank - 1) / URGRotationAngle) * (360 - URGRotationAngle);
 
@@ -370,7 +372,7 @@ namespace ToFile
             }
         }
 
-        private static void InterpolateMesh(StreamWriter streamWriter, double[,,] vectors)
+        private static void InterpolatePoints(StreamWriter streamWriter, double[,,] vectors)
         {
             double interpolationFactor = ((vectors.GetLength(vectors.Rank - 1) / URGRotationAngle) * 360) / vectors.GetLength(vectors.Rank - 2);
 
@@ -392,6 +394,11 @@ namespace ToFile
                     }
                 }
             }
+        }
+
+        private static void ToMesh(DirectoryInfo directoryInfo)
+        {
+            //Process.Start("meshlab.exe");
         }
 
         private static double[,,] VectorMultiplexer(double[,,] magnitudesRGB, double[,,] unitVectors)
