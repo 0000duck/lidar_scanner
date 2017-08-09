@@ -1,0 +1,5 @@
+C:\Users\483446\Documents\PCD\URGtoPCDtoToMesh\URGLibrary\bin\Debug\URGLibrary.dll
+C:\Users\483446\Documents\PCD\URGtoPCDtoToMesh\URGLibrary\bin\Debug\URGLibrary.pdb
+C:\Users\483446\Documents\PCD\URGtoPCDtoToMesh\URGLibrary\obj\Debug\URGLibrary.csprojResolveAssemblyReference.cache
+C:\Users\483446\Documents\PCD\URGtoPCDtoToMesh\URGLibrary\obj\Debug\URGLibrary.dll
+C:\Users\483446\Documents\PCD\URGtoPCDtoToMesh\URGLibrary\obj\Debug\URGLibrary.pdb

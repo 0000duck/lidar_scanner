@@ -272,7 +272,7 @@ namespace ToFile
         {
             int length = vectorsRGB.GetLength(vectorsRGB.Rank - 1) * vectorsRGB.GetLength(vectorsRGB.Rank - 2);
 
-            using (StreamWriter streamWriter = File.CreateText(directoryInfo.ToString() + Path.DirectorySeparatorChar + "PDC.txt"))
+            using (StreamWriter streamWriter = File.CreateText(directoryInfo.FullName.ToString() + Path.DirectorySeparatorChar + "PDC.txt"))
             {
                 streamWriter.WriteLine("# .PCD v.7 - Point Cloud Data file format");
                 streamWriter.WriteLine("VERSION .7");
@@ -298,7 +298,7 @@ namespace ToFile
 
         private static void WriteToToMeshFile(double[,,] vectors, DirectoryInfo directoryInfo)
         {
-            using (StreamWriter streamWriter = File.CreateText(directoryInfo.ToString() + Path.DirectorySeparatorChar + "To_Mesh.txt"))
+            using (StreamWriter streamWriter = File.CreateText(directoryInfo.FullName.ToString() + Path.DirectorySeparatorChar + "To_Mesh.txt"))
             {
                 for (int i = 0; i < vectors.GetLength(vectors.Rank - 2); i++)
                 {
@@ -398,7 +398,30 @@ namespace ToFile
 
         private static void ToMesh(DirectoryInfo directoryInfo)
         {
-            //Process.Start("meshlab.exe");
+            switch(Environment.OSVersion.Platform)
+            {
+                case PlatformID.Unix:
+
+                    LinuxToMesh(directoryInfo);
+
+                    break;
+
+                default:
+
+                    WindowsToMesh(directoryInfo);
+
+                    break;
+            }
+        }
+
+        private static void LinuxToMesh(DirectoryInfo directoryInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void WindowsToMesh(DirectoryInfo directoryInfo)
+        {
+            Process.Start(Directory.GetCurrentDirectory().ToString() + Path.DirectorySeparatorChar + "MeshLab" + Path.DirectorySeparatorChar + "meshlabserver.exe", "-i " + directoryInfo.FullName.ToString() + Path.DirectorySeparatorChar + "To_Mesh.txt" + " -o " + directoryInfo.FullName.ToString() + Path.DirectorySeparatorChar + "Mesh.obj" + " -m vc vn -s MeshLabScript");
         }
 
         private static double[,,] VectorMultiplexer(double[,,] magnitudesRGB, double[,,] unitVectors)
